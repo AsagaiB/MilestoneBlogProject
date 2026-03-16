@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="layout :: layout(~{::body})">
+
+<body>
+<h2>Product Page</h2>
+
+<p>You are logged in as:</p>
+<h4 th:text="${username}"></h4>
+
+<a href="/" class="btn btn-secondary">Back Home</a>
+
+</body>
+</html>
