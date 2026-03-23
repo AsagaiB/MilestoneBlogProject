@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="layout :: layout(~{::body})">
+
+<body>
+<h2>Login</h2>
+
+<form method="post" action="/login">
+    <input name="username" placeholder="Username" class="form-control mb-2"/>
+    <input type="password" name="password" placeholder="Password" class="form-control mb-2"/>
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+
+</body>
+</html>
