@@ -14,16 +14,4 @@ public class HomeController {
                 session.getAttribute("loggedInUser"));
         return "index";
     }
-
-    @GetMapping("/products")
-    public String product(HttpSession session, Model model) {
-        Object user = session.getAttribute("loggedInUser");
-
-        if (user == null) {
-            return "redirect:/login";
-        }
-
-        model.addAttribute("username", user);
-        return "product";
-    }
 }
